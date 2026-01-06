@@ -1,6 +1,6 @@
 <?php
 
-namespace Helper;
+namespace Helpers;
 use Faker\Factory;
 use Models\User;
 

@@ -79,7 +79,7 @@ class User {
     }
 
     public function toHTML(): string {
-        return springf("
+        return sprintf("
             <div class='user-card'>
                 <div class='avatar'>SAMPLE</div>
                 <h2>%s %s</h2>
@@ -89,7 +89,7 @@ class User {
                 <p>Birth Date: %s</p>
                 <p>Membership Expiration Date: %s</p>
                 <p>Role: %s</p>
-            </div>,
+            </div>",
             $this->firstName,
             $this->lastName,
             $this->email,
@@ -98,7 +98,6 @@ class User {
             $this->birthDate->format('Y-m-d'),
             $this->menbershipExpirationDate->format('Y-m-d'),
             $this->role
-        "
     );
     }
 
