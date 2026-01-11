@@ -209,6 +209,17 @@ $users = RandomGenerator::users($min, $max);
 3. `http://localhost:8000/?min=10` のようにパラメータを変えてみる
 4. User クラスに項目を追加して表示を拡張してみる
 
+## 全体構成図
+
+```mermaid
+flowchart TD
+    Browser -->|GET /?min=10| index.php
+    index.php -->|use| RandomGenerator
+    RandomGenerator -->|create| Faker
+    Faker -->|generate| User
+    User -->|render| HTML
+    HTML --> Browser
+```
 ---
 
 
