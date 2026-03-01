@@ -1,0 +1,10 @@
+vendor/
+.git/
+.gitignore
+memorandum
+README.md
+Dockerfile
+.dockerignore
+node_modules
+vendor
+.env
